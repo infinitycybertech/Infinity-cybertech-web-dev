@@ -77,7 +77,7 @@ export const SKILLS = {
     "react",
     "javascript",
     "typescript",
-    "Wordpress",
+    "wordpress2",
     "nodejs",
     "nextjs",
     "tailwindcss",
