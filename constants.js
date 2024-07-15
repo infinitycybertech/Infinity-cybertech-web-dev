@@ -1,10 +1,10 @@
 export const METADATA = {
   author: "Infinity cybertech",
-  title: "Website subscription",
+  title: "Web Development ",
   description:
     "We are n IT firm, We develop morden optimized websites",
   siteUrl: "https://infinitycybertech.com",
-  twitterHandle: "@shubh731",
+  InstagramHandle: "@infinity.cybertech",
   keywords: [
     "Infinity cybertech",
     "Frontend Engineer",
@@ -13,6 +13,7 @@ export const METADATA = {
     "Portfolio",
     "Website development",
     "Infinity cybertech websites",
+    "Software development"
   ].join(", "),
   image:
     "https://infinitycybertech.com/images/resource/about-3.png",
@@ -63,7 +64,12 @@ export const SOCIAL_LINKS = [
   {
     name: "twitter",
     url: "https://www.facebook.com/profile.php?id=61555037308529&mibextid=LQQJ4d",
+  }, 
+  {
+    name: "whatsapp",
+    url: "https://wa.me/message/77A45HKA62HLB1",
   }
+
 ];
 
 export const SKILLS = {
@@ -453,7 +459,7 @@ export const WORK_CONTENTS = {
     {
       title: "Summary",
       description:
-        "Get a professional WordPress website from below options for just 150 rands per month. Enjoy the benefits of a fully functional site without the hefty upfront costs. Plus, receive a free mirrored Android and Windows app with your subscription.",
+        "Get a professional WordPress website from below options for just 250 rands per month. Enjoy the benefits of a fully functional site without the hefty upfront costs. Plus, receive a free mirrored Android and Windows app with your subscription.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
           Installed in less than 48 hours
@@ -485,7 +491,7 @@ export const WORK_CONTENTS = {
     {
       title: "Summary",
       description:
-        "We offer divi WordPress website from below which you get to own forever for just R3000. This package includes a free mirrored Android and Windows app to ensure your business stays connected with your audience across multiple platforms.",
+        "We offer divi WordPress website from below which you get to own forever for just R2500. This package includes a free mirrored Android and Windows app to ensure your business stays connected with your audience across multiple platforms.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
           Free logo if needed
