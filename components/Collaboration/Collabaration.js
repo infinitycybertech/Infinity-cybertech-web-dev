@@ -7,7 +7,8 @@ const Collaboration = ({ clientHeight }) => {
   const targetSection = useRef(null);
 
   useEffect(() => {
-    const smallScreen = document.body.clientWidth < 600;
+    const smallScreen = document.body.clientWidth < 767;
+    const verySmallScreen = document.body.clientWidth < 450;
 
     const timeline = gsap.timeline({
       defaults: { ease: Linear.easeNone },
@@ -23,11 +24,13 @@ const Collaboration = ({ clientHeight }) => {
 
     slidingTl
       .to(targetSection.current.querySelector(".ui-left"), {
-        xPercent: smallScreen ? -500 : -150,
+        xPercent: verySmallScreen ? -50 : smallScreen ? -100 : -150,
       })
       .from(
         targetSection.current.querySelector(".ui-right"),
-        { xPercent: smallScreen ? -500 : -150 },
+        {
+          xPercent: verySmallScreen ? -50 : smallScreen ? -100 : -150,
+        },
         "<"
       );
 
@@ -55,7 +58,7 @@ const Collaboration = ({ clientHeight }) => {
           clientHeight > 650 ? "py-36" : "py-48"
         } section-container flex flex-col`}
       >
-        <p className="opacity-40 text-6xl sm:text-7xl font-semibold whitespace-nowrap ui-left transform-gpu">
+        <p className="opacity-40 text-3xl sm:text-7xl font-semibold whitespace-nowrap ui-left transform-gpu">
           {Array(5)
             .fill(
               "All websites layouts can be customized to your website content. "
@@ -65,13 +68,13 @@ const Collaboration = ({ clientHeight }) => {
 
         <h1
           ref={quoteRef}
-          className="mt-6 md:mt-8 font-medium text-4xl md:text-5xl text-center"
+          className="mt-6 md:mt-8 font-medium text-2xl md:text-5xl text-center"
         >
           Order your{" "}
           <span className="text-strong font-semibold">Website</span>
         </h1>
 
-        <p className="mt-6 md:mt-8 opacity-40 text-6xl sm:text-7xl font-semibold whitespace-nowrap ui-right transform-gpu">
+        <p className="mt-6 md:mt-8 opacity-40 text-3xl sm:text-7xl font-semibold whitespace-nowrap ui-right transform-gpu">
           {Array(5)
             .fill(
               "Problems choosing, need help? Feel free to reach us. "
@@ -91,6 +94,15 @@ const Collaboration = ({ clientHeight }) => {
           background-size: 200% 100%;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
+        }
+        @media (max-width: 450px) {
+          .ui-left,
+          .ui-right {
+            font-size: 1.5rem;
+          }
+          .section-container {
+            padding: 1rem 0;
+          }
         }
       `}</style>
     </section>
