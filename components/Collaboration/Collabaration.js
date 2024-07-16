@@ -7,7 +7,7 @@ const Collaboration = ({ clientHeight }) => {
   const targetSection = useRef(null);
 
   useEffect(() => {
-    const smallScreen = document.body.clientWidth < 767;
+    const smallScreen = document.body.clientWidth < 600;
 
     const timeline = gsap.timeline({
       defaults: { ease: Linear.easeNone },
