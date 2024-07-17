@@ -77,7 +77,7 @@ export default function Home() {
             <Work isDesktop={isDesktop} />
             <About2 clientHeight={clientHeight} />
             <Projects isDesktop={isDesktop} clientHeight={clientHeight} />
-            {isDesktop && <ComputersCanvas />}
+            {isDesktop && <DesktopCanvas/>}
             <Collaboration clientHeight={clientHeight} />
             <Contact />
           </main>
