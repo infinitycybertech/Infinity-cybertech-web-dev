@@ -4,6 +4,7 @@ import { METADATA } from "../../constants";
 const Meta = () => (
   <Head>
     <title>{METADATA.title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={METADATA.description} />
     <meta name="keywords" content={METADATA.keywords} />
     <meta name="robots" content="index,follow" />

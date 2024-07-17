@@ -77,13 +77,9 @@ export default function Home() {
             <Work isDesktop={isDesktop} />
             <About2 clientHeight={clientHeight} />
             <Projects isDesktop={isDesktop} clientHeight={clientHeight} />
-            <DesktopCanvas/>
-            <div>
-              We are infinity cybertech
-            </div>
+            {isDesktop && <ComputersCanvas />}
             <Collaboration clientHeight={clientHeight} />
             <Contact />
-            
           </main>
           <Footer />
         </>
