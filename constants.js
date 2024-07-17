@@ -33,11 +33,11 @@ export const MENULINKS = [
   },
   {
     name: "Services and Pricing",
-    ref: "projects",
+    ref: "work",
   },
   {
     name: "Available Websites",
-    ref: "work",
+    ref: "projects",
   },
   {
     name: "Contact",
