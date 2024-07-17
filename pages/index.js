@@ -71,7 +71,7 @@ export default function Home() {
             <div className="fixed top-0 left-0 h-screen w-screen -z-1" />
             <Hero />
             <About1 clientHeight={clientHeight} />
-            <ComputersCanvas/>
+            {isDesktop && <ComputersCanvas/>}
             <Skills />
             <About3/>
             <Work isDesktop={isDesktop} />
