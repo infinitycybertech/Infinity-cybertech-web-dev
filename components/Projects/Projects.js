@@ -83,7 +83,7 @@ const Projects = ({ isDesktop, clientHeight }) => {
       ref={targetSection}
       className={`${
         isDesktop && "min-h-screen"
-      } w-full relative select-none section-container transform-gpu overflow-hidden`}
+      } w-full relative select-none section-container transform-gpu`}
       id={MENULINKS[2].ref}
     >
       <div className="flex flex-col py- justify-center h-full">
