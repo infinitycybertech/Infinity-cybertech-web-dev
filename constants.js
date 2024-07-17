@@ -19,6 +19,7 @@ export const METADATA = {
     "https://infinitycybertech.com/images/resource/about-3.png",
   language: "English",
   themeColor: "#000000",
+  
 };
 
 export const MENULINKS = [
@@ -32,11 +33,11 @@ export const MENULINKS = [
   },
   {
     name: "Services and Pricing",
-    ref: "projects",
+    ref: "work",
   },
   {
     name: "Available Websites",
-    ref: "work",
+    ref: "projects",
   },
   {
     name: "Contact",
