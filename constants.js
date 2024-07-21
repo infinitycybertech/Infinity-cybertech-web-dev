@@ -68,7 +68,7 @@ export const SOCIAL_LINKS = [
   }, 
   {
     name: "whatsapp",
-    url: "https://wa.me/message/77A45HKA62HLB1",
+    url: "https://wa.me/message/LHRHMLWQ23QUO1",
   }
 
 ];
