@@ -92,13 +92,13 @@ const Projects = ({ isDesktop, clientHeight }) => {
           ref={sectionTitle}
         >
           <p className="uppercase tracking-widest text-gray-light-1 seq">
-            Our websites 
+            Some of Our websites 
           </p>
           <h1 className="text-6xl mt-2 font-medium text-gradient w-fit seq">
             Available to rent or buy
           </h1>
           <h2 className="text-[1.65rem] font-medium md:max-w-lg max-w-sm mt-2 seq">
-            Check and view our websites that are currently available to rent or buy for the fixed price.  {" "}
+            Check and view our some of websites that are  available to rent or buy for the fixed price.  {" "}
           </h2>
         </div>
         <div
