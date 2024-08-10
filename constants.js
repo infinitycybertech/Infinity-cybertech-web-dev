@@ -235,15 +235,7 @@ export const PROJECTS = [
     url: "https://www.elegantthemes.com/layouts/fashion-beauty/beauty-product-landing-page/live-demo",
     tech: [],
   },
-  {
-    name: "Fitness Coach",
-    image: "/projects/fit.jpg",
-    blurImage: "/projects/fit.jpg",
-    description: "Get Movin’ with this inspiring Fitness Coach Layout Pack. All the page layouts included are ready to bring new life to any fitness website.",
-    gradient: ["#000000", "#7C1244"],
-    url: "https://www.elegantthemes.com/layouts/health-fitness/fitness-coach-landing-page/live-demo",
-    tech: [],
-  },
+
   {
     name: "Tutor Website",
     image: "/projects/tutor.jpg",
@@ -262,15 +254,7 @@ export const PROJECTS = [
     url: "https://www.elegantthemes.com/layouts/food-drink/bar-landing-page/live-demo",
     tech: [],
   },
-  {
-    name: "Graphic Designer",
-    image: "/projects/graphic.jpg",
-    blurImage: "/projects/graphic.jpg",
-    description: "There's no better way to create a graphic illustrator website than by using illustrations throughout your website in a creative and professional way. That's exactly what this Graphic Illustrator Layout Pack does.",
-    gradient: ["#B11E85", "#FF84D6"],
-    url: "https://www.elegantthemes.com/layouts/art-design/graphic-illustrator-landing-page/live-demo",
-    tech: [],
-  },
+  
   {
     name: "Law Firm",
     image: "/projects/law.jpg",
@@ -362,24 +346,7 @@ export const PROJECTS = [
     url: "https://www.elegantthemes.com/layouts/education/high-school-home-page/live-demo",
     tech: [],
   },
-  {
-    name: "University",
-    image: "/projects/uni.jpg",
-    blurImage: "/projects/uni.jpg",
-    description: "This eye-catching design combines monochrome with a soft color palette to showcase your school in stunning style.",
-    gradient: ["#EB6767", "#000000"],
-    url: "https://www.elegantthemes.com/layouts/education/online-university-home-page/live-demo",
-    tech: [],
-  },
-  {
-    name: "Restaurant",
-    image: "/projects/rest.jpg",
-    blurImage: "/projects/rest.jpg",
-    description: "This restaurant layout pack is designed to provide everything the average restaurant will need out of the box.",
-    gradient: ["#691FCA", "#28CDF7"],
-    url: "https://www.elegantthemes.com/layouts/business/restaurant-landing-page/live-demo",
-    tech: [],
-  },
+ 
   {
     name: "Pharmacy store",
     image: "/projects/pharmacy.jpg",

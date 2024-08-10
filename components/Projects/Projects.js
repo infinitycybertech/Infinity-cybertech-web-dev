@@ -98,7 +98,7 @@ const Projects = ({ isDesktop, clientHeight }) => {
             Available to rent or buy
           </h1>
           <h2 className="text-[1.65rem] font-medium md:max-w-lg max-w-sm mt-2 seq">
-            Check and view our some of websites that are  available to rent or buy for the fixed price.  {" "}
+            Check and view our some of our websites that are available to rent or buy for the fixed price.  {" "}
           </h2>
         </div>
         <div
