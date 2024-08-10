@@ -8,6 +8,8 @@ import mail from "./mailer";
 import styles from "./Contact.module.scss";
 import { MENULINKS } from "../../constants";
 
+
+
 const filter = new Filter();
 filter.removeWords("hell", "god", "shit");
 
@@ -36,7 +38,7 @@ const success = () =>
   });
 
 const Contact = () => {
-  const initialState = { name: "", email: "", subject: "", message: "" };
+  const initialState = { name: "", email: "",phoneN: "",company: "", message: "" };
   const [formData, setFormData] = useState(initialState);
   const [mailerResponse, setMailerResponse] = useState("not initiated");
   const [isSending, setIsSending] = useState(false);
@@ -65,21 +67,22 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const { name, email, subject, message } = {
+    const { name, email,phoneN, message,company } = {
       name: formData.name,
       email: formData.email,
-      subject: formData.subject,
       message: formData.message,
-     
+      phoneN: formData.phoneN,
+      company: formData.company
+      
     };
 
-    if (name === "" || email === "" || subject ==="" ||message === "") {
+    if (name === "" || email === "" || message === "") {
       empty();
       return setMailerResponse("empty");
     }
 
     setIsSending(true);
-    mail({ name, email, subject,message })
+    mail({ name, email,phoneN,company, message })
       .then((res) => {
         if (res.status === 200) {
           setMailerResponse("success");
@@ -249,7 +252,7 @@ const Contact = () => {
 
   return (
     <section
-      className="mt-30 w-full relative select-none bg-black pt-20 sm:pt-10 md:pt-5 lg:pt-1 pb-20"
+      className="mt-10 w-full relative select-none bg-black pt-10 sm:pt-5 md:pt-2 lg:pt-1 pb-10"
       id={MENULINKS[4].ref}
       ref={targetSection}
     >
@@ -260,14 +263,14 @@ const Contact = () => {
         <div className="flex flex-col contact-wrapper">
           <div className="flex flex-col">
             <p className="uppercase tracking-widest text-gray-light-1 seq">
-              CONTACT
+            Let’s Build Something Great
             </p>
             <h1 className="text-6xl mt-2 font-medium text-gradient w-fit seq">
-              Contact
+              Ready to start something?
             </h1>
           </div>
           <h2 className="text-[1.65rem] font-medium md:max-w-lg w-full mt-2 seq">
-            Request a website or ask anything{" "}
+          Let's talk abour your project needs.{" "}
           </h2>
         </div>
 
@@ -286,7 +289,7 @@ const Contact = () => {
                 htmlFor="name"
                 className="absolute top-0 left-0 h-full flex items-center pl-4 text-lg font-mono transform transition-all"
               >
-                Name
+                Full Name
               </label>
             </div>
 
@@ -306,21 +309,36 @@ const Contact = () => {
                 Email
               </label>
             </div>
-
             <div className="relative mt-14">
               <input
                 type="text"
-                id="subject"
+                id="phoneN"
                 className="block w-full h-12 sm:h-14 px-4 text-xl sm:text-2xl font-mono outline-none border-2 border-purple bg-transparent rounded-[0.6rem] transition-all duration-200"
-                value={formData.subject}
+                value={formData.phoneN}
                 onChange={handleChange}
                 required
               />
               <label
-                htmlFor="subject"
+                htmlFor="phoneN"
                 className="absolute top-0 left-0 h-full flex items-center pl-4 text-lg font-mono transform transition-all"
               >
-                Subject
+                Phone Number
+              </label>
+            </div>
+            <div className="relative mt-14">
+              <input
+                type="text"
+                id="company"
+                className="block w-full h-12 sm:h-14 px-4 text-xl sm:text-2xl font-mono outline-none border-2 border-purple bg-transparent rounded-[0.6rem] transition-all duration-200"
+                value={formData.company}
+                onChange={handleChange}
+                required
+              />
+              <label
+                htmlFor="company"
+                className="absolute top-0 left-0 h-full flex items-center pl-4 text-lg font-mono transform transition-all"
+              >
+                Company
               </label>
             </div>
 
@@ -336,7 +354,7 @@ const Contact = () => {
                 htmlFor="message"
                 className="absolute top-0 left-0 h-14 flex items-center pl-4 text-lg font-mono transform transition-all"
               >
-                Message
+                Project Synopsis
               </label>
             </div>
           </Fade>
@@ -355,8 +373,7 @@ const Contact = () => {
             disabled={
               formData.name === "" ||
               formData.email === "" ||
-              formData.message === ""||
-              formData.subject === ""
+              formData.message === ""
                 ? true
                 : false
             }
@@ -374,8 +391,8 @@ const Contact = () => {
               <path d="M6,4 C8,13.3333333 9,22.6666667 9,32 C9,41.3333333 8,50.6666667 6,60"></path>
             </svg>
             <div className={styles.plane}>
-              <div className={styles.left} />
-              <div className={styles.right} />
+              <div className={styles.left}></div>
+              <div className={styles.right}></div>
             </div>
           </button>
         </div>

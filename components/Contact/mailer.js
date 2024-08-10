@@ -1,10 +1,10 @@
 import emailjs from "@emailjs/browser";
 
-const mail = ({ name, email, message,subject }) =>
+const mail = ({ name, email, message,phoneN,company }) =>
   emailjs.send(
     process.env.NEXT_PUBLIC_SERVICE_ID,
     process.env.NEXT_PUBLIC_TEMPLATE_ID,
-    { name, email, message, subject, recipient: 'admin@infinitycybertech.com' },
+    { name, email, message, phoneN,company, recipient: 'admin@infinitycybertech.com' },
     {
       publicKey: process.env.NEXT_PUBLIC_USER_ID,
       limitRate: {

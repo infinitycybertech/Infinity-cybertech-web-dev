@@ -44,6 +44,16 @@ const Footer = () => {
         backgroundImage: `linear-gradient(to right, ${theme.colors.indigo.light}, ${theme.colors.indigo.dark})`,
       }}
     >
+      <div className="section-container flex flex-col h-full justify-end z-10 items-center py-12">
+       <p className="text-center text-black text-sm sm:text-base font-medium tracking-wide mt-6">
+      <h1 className="font-small text-2xl md:text-3xl text-center seq">
+              Not sure yet? We still offer free consulting and website/software advice regardless if you using us or not 
+            </h1>
+            <h1 className="font-small text-1xl md:text-2xl text-center seq">
+              You can ask anything and we'll reach you (We promise we won’t hold you to it...) 
+            </h1>
+            </p>
+            </div>
       <FooterBg />
       <Fade bottom distance={"4rem"}>
         <div className="w-full h-full pt-32">

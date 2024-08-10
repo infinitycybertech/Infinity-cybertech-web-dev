@@ -67,8 +67,8 @@ const Collaboration = ({ clientHeight }) => {
           ref={quoteRef}
           className="mt-6 md:mt-8 font-medium text-4xl md:text-5xl text-center"
         >
-          Order your{" "}
-          <span className="text-strong font-semibold">Website</span>
+          Schedule A{" "}
+          <span className="text-strong font-semibold">Demo</span>
         </h1>
 
         <p className="mt-6 md:mt-8 opacity-40 text-6xl sm:text-7xl font-semibold whitespace-nowrap ui-right transform-gpu">
@@ -85,7 +85,7 @@ const Collaboration = ({ clientHeight }) => {
             90deg,
             #ffffff 0%,
             #ffffff 50%,
-            #8b31ff 51%,
+            #882EFF 51%,
             #7000ff 102%
           );
           background-size: 200% 100%;

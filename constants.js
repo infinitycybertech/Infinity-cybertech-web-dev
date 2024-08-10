@@ -2,8 +2,8 @@ export const METADATA = {
   author: "Infinity cybertech",
   title: "Web Development ",
   description:
-    "We are n IT firm, We develop morden optimized websites",
-  siteUrl: "https://infinitycybertech.com",
+    "We are an IT firm, that specializes in developing modern optimized websites. ",
+    siteUrl: "https://infinitycybertech.com",
   InstagramHandle: "@infinity.cybertech",
   keywords: [
     "Infinity cybertech",
@@ -11,6 +11,7 @@ export const METADATA = {
     "React Native Developer",
     "Software Engineer",
     "Portfolio",
+    "Wordpress website",
     "Website development",
     "Infinity cybertech websites",
     "Software development"
@@ -46,7 +47,7 @@ export const MENULINKS = [
 ];
 
 export const TYPED_STRINGS = [
-  "Pragmatic Website Developers",
+  
   "We build things for the web",
   "We create aesthetic and modern web apps",
 ];
@@ -54,7 +55,7 @@ export const TYPED_STRINGS = [
 export const SOCIAL_LINKS = [
   {
     name: "mail",
-    url: "mailto: admin@infinitycybertech.com",
+    url: "mailto: infinitycybertech21@gmail.com",
   },
  
  
