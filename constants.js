@@ -428,7 +428,7 @@ export const WORK_CONTENTS = {
     {
       title: "Summary",
       description:
-        "Get a professional WordPress website from below options for just 250 rands per month. Enjoy the benefits of a fully functional site without the hefty upfront costs. Plus, receive a free mirrored Android and Windows app with your subscription.",
+        "Get a professional WordPress website from below options for just 20 US Dollars or 250 Rands per month. Enjoy the benefits of a fully functional site without the hefty upfront costs. Plus, receive a free mirrored Android and Windows app with your subscription.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
           Installed in less than 48 hours
@@ -460,7 +460,7 @@ export const WORK_CONTENTS = {
     {
       title: "Summary",
       description:
-        "We offer divi WordPress website from below which you get to own forever for just R2500. This package includes a free mirrored Android and Windows app to ensure your business stays connected with your audience across multiple platforms.",
+        "We offer divi WordPress website from below which you get to own forever for just $200 or 2500 rands. This package includes a free mirrored Android and Windows app to ensure your business stays connected with your audience across multiple platforms.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
           Free logo if needed
