@@ -2,7 +2,7 @@
 
 This website was developed by infinity cybertech It firm using react and three js while also powered by nextjs
 
-This website can be used a personal website or anything. It's still not perfect but should work fine with just
+This website can be used as personal website or a website to showcase anything. It's still not perfect but should work fine with just
 
 yarn install
 
